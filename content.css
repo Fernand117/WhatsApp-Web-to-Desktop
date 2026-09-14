@@ -1,0 +1,100 @@
+[data-wa-sidebar-panel="true"],
+.x1a0bplq.x1a0bplq[data-wa-sidebar-panel="true"] {
+  width: var(--wa-sw, 380px) !important;
+  min-width: 0 !important;
+}
+
+[data-wa-overlay="true"] {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  height: 100% !important;
+  width: var(--wa-sw, 380px) !important;
+  max-width: 85vw !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35) !important;
+  transition: transform 0.22s ease !important;
+  z-index: 2147483645 !important;
+}
+
+[data-wa-overlay-hidden="true"] {
+  transform: translateX(-100%) !important;
+}
+
+#wa-sidebar-handle {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 6px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  cursor: col-resize !important;
+  z-index: 2147483646 !important;
+  background: transparent !important;
+}
+
+#wa-sidebar-handle::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 4px !important;
+  width: 2px !important;
+  background: transparent !important;
+  transition: background 0.15s ease !important;
+}
+
+#wa-sidebar-handle:hover::after,
+#wa-sidebar-handle.wa-handle-dragging::after {
+  background: #00a884 !important;
+}
+
+#wa-sidebar-scrim {
+  display: none !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 2147483644 !important;
+}
+
+#wa-sidebar-scrim.wa-shown {
+  display: block !important;
+}
+
+#wa-sidebar-toggle {
+  display: none !important;
+  position: fixed !important;
+  left: 80px !important;
+  top: 10px !important;
+  width: 44px !important;
+  height: 44px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #00a884 !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 3px rgba(11, 20, 26, 0.5) !important;
+  z-index: 2147483647 !important;
+  padding: 0 !important;
+  transition: transform 0.15s ease !important;
+}
+
+#wa-sidebar-toggle.wa-shown {
+  display: flex !important;
+}
+
+#wa-sidebar-toggle:hover {
+  transform: scale(1.08) !important;
+}
+
+html.wa-resizing,
+html.wa-resizing * {
+  cursor: col-resize !important;
+  user-select: none !important;
+}
